@@ -1,0 +1,9 @@
+<suite name = "Suite">
+    <test name="TestNGDemo">
+        <classes>
+            <class name="TestCase1">
+            </class>
+        </classes>
+
+    </test>
+</suite>
