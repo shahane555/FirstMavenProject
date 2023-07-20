@@ -13,10 +13,11 @@ public class PrintEmail {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://practice.expandtesting.com/tables");
-        System.out.println(driver.findElement(By.cssSelector("#table2 > tbody > tr:nth-child(1) > td.email")).getText());
-        System.out.println(driver.findElement(By.cssSelector("#table2 > tbody > tr:nth-child(2) > td.email")).getText());
-        System.out.println(driver.findElement(By.cssSelector("#table2 > tbody > tr:nth-child(3) > td.email")).getText());
-        System.out.println(driver.findElement(By.cssSelector("#table2 > tbody > tr:nth-child(4) > td.email")).getText());
-        driver.findElement(By.cssSelector("#table2 > tbody > tr:nth-child(1) > td.action > a.btn.btn-danger")).click();
+        System.out.println(driver.findElement(By.xpath("//*[@id='table2']/tbody/tr[1]/td[3]")).getText());
+        System.out.println(driver.findElement(By.xpath("//*[@id='table2']/tbody/tr[2]/td[3]")).getText());
+        System.out.println(driver.findElement(By.xpath("//*[@id='table2']/tbody/tr[3]/td[3]")).getText());
+        System.out.println(driver.findElement(By.xpath("//*[@id='table2']/tbody/tr[4]/td[3]")).getText());
+        driver.findElement(By.xpath("//*[@id='table2']/tbody/tr[1]/td[6]/a[2]")).click();
+        driver.quit();
     }
 }
