@@ -17,7 +17,7 @@ public class ParkingCostCalcTest {
     private WebDriver driver;
 
     @BeforeMethod
-    public void testBasketButton() {
+    public void setup() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
